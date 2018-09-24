@@ -1,10 +1,10 @@
 {
     "name":"jest-pnp-resolver",
-    "version":"1.0.0",
+    "version":"1.0.1",
     "description": "plug'n'play resolver for Webpack",
     "license": "MIT",
     "engines": {
-        "node": ">6"
+        "node": ">=6"
     },
     "homepage": "https://github.com/arcanis/jest-pnp-resolver",
     "bugs": {
