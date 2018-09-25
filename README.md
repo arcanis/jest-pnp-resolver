@@ -3,6 +3,8 @@
 [![npm version](https://img.shields.io/npm/v/jest-pnp-resolver.svg)](https://www.npmjs.com/package/jest-pnp-resolver)
 [![node version](https://img.shields.io/node/v/jest-pnp-resolver.svg)](https://www.npmjs.com/package/jest-pnp-resolver)
 
+*This plugin is also available for Rollup ([rollup-plugin-pnp-resolve](https://github.com/arcanis/rollup-plugin-pnp-resolve)) and Webpack ([pnp-webpack-plugin](https://github.com/arcanis/pnp-webpack-plugin))*
+
 ## Installation
 
 ```
@@ -19,7 +21,7 @@ module.exports = {
 };
 ```
 
-Note that `jest-resolve` is a peer dependency of `jest-pnp-resolver`, but is only ever used to fallback to the regular resolver when Jest is used on non-pnp environment.
+Note that `jest-resolve` is a peer dependency of `jest-pnp-resolver`, but is only ever used to fallback to the regular resolver when Jest is used on non-pnp environments.
 
 ## License (MIT)
 
