@@ -1,6 +1,6 @@
 {
-    "name":"jest-pnp-resolver",
-    "version":"1.0.1",
+    "name": "jest-pnp-resolver",
+    "version": "1.0.2",
     "description": "plug'n'play resolver for Webpack",
     "license": "MIT",
     "engines": {
