@@ -17,7 +17,7 @@ Simply add the resolver to your configuration. For example, a minimal `jest.conf
 
 ```js
 module.exports = {
-  resolver: require.resolve(`jest-pnp-resolver`);
+  resolver: require.resolve(`jest-pnp-resolver`)
 };
 ```
 
