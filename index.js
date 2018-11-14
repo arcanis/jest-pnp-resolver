@@ -8,8 +8,8 @@ try {
 }
 
 if (pnp) {
-  module.exports = (request, {basedir}) => {
-    const resolution = pnp.resolveRequest(request, `${basedir}/`);
+  module.exports = (request, {basedir, extensions}) => {
+    const resolution = pnp.resolveRequest(request, `${basedir}/`, {extensions});
 
     // When the request is a native module, Jest expects to get the string back unmodified, but pnp returns null instead.
     if (resolution === null) {
