@@ -19,5 +19,9 @@ if (pnp) {
     return resolution;
   };
 } else {
-  module.exports = require(`jest-resolve/build/default_resolver`).default;
+  try {
+    module.exports = require(`jest-resolve/build/defaultResolver`).default;
+  } catch (error) {
+    module.exports = require(`jest-resolve/build/default_resolver`).default;
+  }
 }
