@@ -8,7 +8,7 @@
 ## Installation
 
 ```
-yarn add -D jest-pnp-resolver jest-resolve
+yarn add -D jest-pnp-resolver
 ```
 
 ## Usage
@@ -20,8 +20,6 @@ module.exports = {
   resolver: require.resolve(`jest-pnp-resolver`)
 };
 ```
-
-Note that `jest-resolve` is a peer dependency of `jest-pnp-resolver`, but is only ever used to fallback to the regular resolver when Jest is used on non-pnp environments.
 
 ## License (MIT)
 

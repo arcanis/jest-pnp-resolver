@@ -1,6 +1,6 @@
 {
     "name": "jest-pnp-resolver",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "plug'n'play resolver for Webpack",
     "license": "MIT",
     "engines": {
@@ -22,5 +22,10 @@
     ],
     "peerDependencies": {
         "jest-resolve": "*"
+    },
+    "peerDependenciesMeta": {
+        "jest-resolve": {
+            "optional": true
+        }
     }
 }
