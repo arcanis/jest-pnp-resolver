@@ -43,5 +43,5 @@ module.exports = (request, options) => {
   }
 
   const defaultResolver = getDefaultResolver();
-  return defaultResolver(request, {...options, usePnp: false});
+  return defaultResolver(request, {...options, allowPnp: false});
 };
