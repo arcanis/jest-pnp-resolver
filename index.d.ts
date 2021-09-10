@@ -1,10 +1,10 @@
-type JestResolverOptions = {
+type JestResolverOptions<T> = {
   basedir: string;
-  defaultResolver: (request: string, opts: any) => string,
+  defaultResolver: T;
   extensions?: Array<string>,
 };
 
-export default function resolve(
-  request: string,
-  options: JestResolverOptions,
-): string;
+export default function resolve<D extends (request: string, options: JestResolverOptions<D>) => any>(
+  request: string, 
+  options: JestResolverOptions<D>
+): ReturnType<D>
