@@ -1,7 +1,7 @@
 type JestResolverOptions = {
   basedir: string;
   defaultResolver: (request: string, opts: any) => string,
-  extensions?: Array<string>,
+  extensions?: ReadonlyArray<string>,
 };
 
 export default function resolve(
